@@ -35,24 +35,46 @@ html{
 body{
     font-size: 1.8rem;
     line-height: 1.5;
-    font-family: font-family: 'Cormorant Garamond', serif;
-
+    font-family: 'Cormorant Garamond', serif;
 }
 
 section{
-
+    padding: 4% 0;
 }
-h1, h2, h3{
-    font-family: 'Syne', sans-serif;
 
+h1{
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 3px;
+    padding: 4% 0;
+    font-size: 4rem;
 }
 /*This is the header section style*/
 header{
-
+    height: 90vh;
+    background-color: mediumturquoise;
+}
+nav{
+    display:flex;
+    justify-content: flex-start;
+}
+#about nav a{
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    color: palevioletred;
+    padding: 1% 0;
+}
+#about nav .black{
+    background-color: black;
+}
+.headerContent .profilepic{
+    size: 30%;
 }
 button {
     color:white;
-    background-color:#BB2026;
+    background-color: palevioletred;
     font-size:16px;
   }
 /*This is the intro section style*/
