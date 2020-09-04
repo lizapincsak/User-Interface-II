@@ -69,3 +69,31 @@ Follow these steps for completing your project.
 - [ ] Submit a pull request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your Team Lead as a reviewer on the pull request
 - [ ] Your Team Lead will count the project as complete by merging the branch back into master
+.img{
+    display:flex;
+    width: 12.5%;
+}
+.image1{
+    flex: 1;
+}
+.image2{
+    flex: 1;
+}
+.image3{
+    flex: 1;
+}
+.image4{
+    flex:1;
+}
+.image5{
+    flex:1;
+}
+.image6{
+    flex:1;
+}
+.image7{
+    flex:1;
+}
+.image8{
+    flex:1;
+}
