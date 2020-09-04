@@ -1,1 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap');
+
 /* Add CSS styling here */
+/*reset*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;   
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+/*General styles here*/
+html{
+    font-size: 62.5%
+}
+body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1{
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 3px;
+    padding: 4% 0;
+    font-size: 4rem;
+}
+section{
+    padding: 4% 0;
+}
+/*This is the header section style*/
+header{
+    height: 90vh;
+    padding: 4%;
+}
+nav{
+    display:flex;
+    justify-content: flex-start;
+}
+h1, nav{
+    background-color: mediumturquoise;
+}
+#about nav a{
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    color: palevioletred;
+    padding: 4% 0;
+}
+#about nav .black{
+    background-color: black;
+}
+.headerContent{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+.headerContent .img{
+    border-radius: 20%;
+    padding: 5px;
+}
+.profilepic{
+    width: 10%;
+}
+.headerContent .about{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 2px;
+    padding: 4% 0;
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+}
+button {
+    color:white;
+    background-color: palevioletred;
+    font-size:16px;
+  }
+/*This is the intro section style*/
+section{
+    padding: 4% 0;
+}
+#messymiddle{
+    height: 8vh;
+    display: flex;  
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+    
+}
+
+#messymiddle div{
+    width: 21%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#messymiddle img{
+    border-radius: 50px;
+    padding: 15%;
+    width: 150px;
+}
+
+h3{
+    font-size: 1rem;
+    text-align: justify;
+
+}
+
+/*This is the footer style*/
+
+#footer{
+    height: 30vh;
+    background-color: mediumturquoise;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
