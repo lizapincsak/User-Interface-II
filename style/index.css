@@ -51,11 +51,13 @@ h1{
 /*This is the header section style*/
 header{
     height: 90vh;
-    background-color: mediumturquoise;
 }
 nav{
     display:flex;
     justify-content: flex-start;
+}
+h1, nav{
+    background-color: mediumturquoise;
 }
 #about nav a{
     width: 15%;
@@ -69,8 +71,31 @@ nav{
 #about nav .black{
     background-color: black;
 }
-.headerContent .profilepic{
-    size: 30%;
+.headerContent{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+.headerContent .img{
+    border-radius: 50%;
+    padding: 5px;
+}
+.profilepic{
+    width: 30%;
+}
+.headerContent .about{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 2px;
+    padding: 4% 0;
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
 }
 button {
     color:white;
@@ -78,14 +103,23 @@ button {
     font-size:16px;
   }
 /*This is the intro section style*/
-section{
 
+.content{
+    display: flex;
 }
-/*This is the photo section style*/
-section{
+.allimages{
+   padding: 10px;
+   margin: 2%;
+   display: flex;
+   justify-content: space-around;
+}
 
-}
 /*This is the footer style*/
-footer{
+
+#contact{
+    background-color: mediumturquoise;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
 }
