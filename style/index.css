@@ -117,8 +117,7 @@ section{
     width: 21%;
     margin: 2%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -128,6 +127,11 @@ section{
     width: 150px;
 }
 
+h3{
+    font-size: 1rem;
+    text-align: justify;
+
+}
 
 /*This is the footer style*/
 
