@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-/*border: 0;*/   
+border: 0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -28,7 +28,6 @@ vertical-align: baseline;
   padding:0;
   margin:0;
   max-width:100%;
-  border:1px solid grey;
 }
 /*General styles here*/
 html{
@@ -48,11 +47,11 @@ h1, h2, h3{
     color: #4f4f4f;
 }
 section{
-    padding: 4% 0;
+    padding: 2% 0;
 }
 /*This is the header section style*/
 header{
-    height: 90vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -104,16 +103,16 @@ nav .black{
     width: 60%;
 
 }
-h2{
+.textcontainer h2{
     font-family: 'Syne', sans-serif;
     letter-spacing: 2px;
-    padding: 4%;
-    margin-top: 12%;
+    padding: 2%;
+    margin-top: 4%;
     font-size: 2rem;
 }
 p{
     font-size: 1.5rem;
-    padding: 4%;
+    padding: 2%;
 }
 .textcontainer button {
     color:white;
@@ -123,10 +122,11 @@ p{
   }
 /*This is the intro section style*/
 #messymiddle{
-    height: 80vh;
+    height: 60vh;
     display: flex;  
     flex-wrap: wrap;    
     justify-content: space-evenly;
+    margin-bottom: 10%;
 }
 
 #messymiddle div{
@@ -139,7 +139,7 @@ p{
 }
 
 #messymiddle img{
-    padding: 15%;
+    padding: 4%;
     max-width: 100%;
 }
 
@@ -160,7 +160,7 @@ footer{
     background-attachment: fixed;
 
 }
-h2{
+footer h2{
     text-align: center;
 }
 footer button{
@@ -170,4 +170,87 @@ footer button{
     padding: 2% 4%;
     border-color: black;
     margin-bottom: 10%;
+}
+
+/*800px*/
+@media(max-width: 800px){
+    .textcontainer{
+        flex-wrap:wrap;
+        width: 50%;
+    }
+    .textcontainer h2{
+        letter-spacing: 1px;
+        padding: 4%;
+        margin-top: 4%;
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+        padding: 2%;
+    }
+    .textcontainer button {
+        color:white;
+        background-color: palevioletred;
+        font-size:1.4rem;
+        padding: 2%;
+    }
+    }
+/*500px*/
+@media(max-width: 500px){
+    body{
+        font-size: 1.6rem;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+  nav a{
+    margin: 0;
+  }
+  nav .black{
+    margin:0;
+  }
+  .next{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4%;
+  }
+  .profilepic{
+    width: 30%;
+    display: block;
+    margin: 0;
+  }
+  .textcontainer{
+    width: 100%;
+  }
+  .textcontainer h2{
+    letter-spacing: 1.4px;
+    padding: 2%;
+    margin-top: 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .textcontainer button{
+    font-size: 1.2 rem;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+  }
+  #messymiddle .image{
+    width: 40%;
+  }
+  #messymiddle .image6{
+    display:none;
+  }
+  #messymiddle .image5{
+    display:none;
+  }
 }
