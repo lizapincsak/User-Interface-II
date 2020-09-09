@@ -49,9 +49,18 @@ h1, h2, h3{
 section{
     padding: 2% 0;
 }
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 /*This is the header section style*/
 header{
-    height: 60vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,11 +69,11 @@ header{
 /*nav style here*/
 header nav{
     width: 100%;
-    background-color: mediumturquoise;
+    background-color: lightblue;
     display:flex;
 }
 h1{
-    background-color: mediumturquoise;
+    background-color: lightblue;
     padding: 4% 2%;
     font-size: 3rem;
 }
@@ -75,7 +84,7 @@ nav a{
     color: palevioletred;
     padding: 2%;
     margin: 4% 0%;
-    border-color: black;
+    border-color: solid black 1px;
 }
 nav .black{
     background-color: black;
@@ -99,7 +108,6 @@ nav .black{
 }
 /*header writing on right side*/
 .textcontainer{
-    height: 80vh;
     width: 60%;
 
 }
@@ -114,7 +122,7 @@ p{
     font-size: 1.5rem;
     padding: 2%;
 }
-.textcontainer button {
+.textcontainer .button1{
     color:white;
     background-color: palevioletred;
     font-size:1.6rem;
@@ -122,7 +130,7 @@ p{
   }
 /*This is the intro section style*/
 #messymiddle{
-    height: 60vh;
+    width: 100%;
     display: flex;  
     flex-wrap: wrap;    
     justify-content: space-evenly;
@@ -151,8 +159,8 @@ h3{
 /*This is the footer style*/
 
 footer{
-    height: 30vh;
-    background-color: mediumturquoise;
+    width: 100%;
+    background-color:lightblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -163,7 +171,7 @@ footer{
 footer h2{
     text-align: center;
 }
-footer button{
+footer .button2{
     color:white;
     background-color: palevioletred;
     font-size:1.6rem;
@@ -188,11 +196,11 @@ footer button{
         font-size: 1rem;
         padding: 2%;
     }
-    .textcontainer button {
+    .textcontainer button1{
         color:white;
         background-color: palevioletred;
         font-size:1.4rem;
-        padding: 2%;
+        padding: 0;
     }
     }
 /*500px*/
@@ -209,6 +217,7 @@ footer button{
     }
   nav a{
     margin: 0;
+    border: black 1px solid;
   }
   nav .black{
     margin:0;
@@ -218,7 +227,7 @@ footer button{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 4%;
+    padding: 2%;
   }
   .profilepic{
     width: 30%;
@@ -231,17 +240,18 @@ footer button{
   .textcontainer h2{
     letter-spacing: 1.4px;
     padding: 2%;
-    margin-top: 0;
+    margin: 0;
     font-size: 1.4rem;
     text-align: center;
   }
   p{
     font-size: 1rem;
+    margin: 0;
   }
-  .textcontainer button{
+  .textcontainer .button1{
     font-size: 1.2 rem;
     text-align: center;
-    margin: 0;
+    margin-left: 35%;
     padding: 2%;
   }
   #messymiddle .image{
@@ -253,4 +263,19 @@ footer button{
   #messymiddle .image5{
     display:none;
   }
+  footer{
+    width: 100%;
+}
+footer h2{
+    text-align: center;
+    padding: 2%;
+}
+footer .button2{
+    color:white;
+    background-color: palevioletred;
+    font-size:1.6rem;
+    padding: 2% 4%;
+    border-color: black;
+    margin-bottom: 10%;
+}
 }
