@@ -42,10 +42,34 @@ h1, h2, h3{
     font-family: 'Poppins', sans-serif;
     color: #474747;
 }
+h1{
+    background-color: #D4C2B2;
+    color: #EB712F;
+    text-shadow: 2px 2px white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2% 0;
+}
+h2{
+    font-size: 4rem;
+    color: #EB712F;
+    text-shadow: 1px 1px white;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*header*/
+
+
+
+
 /*hero-image*/
 #hero-image{
-    background-image:url("assets/pumpkincomputershrunk.jpg");
-    height: 50%;
+    background-image:url('/assets/pumpkincomputershrunk.jpg');
+    height: 60vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -54,13 +78,34 @@ h1, h2, h3{
 
 /*images*/
 .images{
-    width: 30%;
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2% 0;
+}
 
+.images p{
+    background-color: #91371B;
+    padding: 25% 23% 5% 10%;
+    /* width: 100%; */
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+}
+.images img{
+    margin-right: 6%;
 }
 
 
-
 /*footer*/
+footer{
+    padding: 6%;
+    background-color:#FADDAF;
+    text-align: center;
+}
 button{
     background: transparent;
     border: 3px solid #472C25;
